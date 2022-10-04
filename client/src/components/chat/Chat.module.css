@@ -1,0 +1,88 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--chat-background);
+}
+.wrapper .header {
+  height: 5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  background-color: var(--white);
+  border-bottom: solid 0.5px var(--mid-grey);
+  text-transform: capitalize;
+}
+.wrapper .chat {
+  margin-top: 3rem;
+  height: 100%;
+  overflow-y: auto;
+}
+.wrapper .chat .right,
+.wrapper .chat .left {
+  display: flex;
+}
+.wrapper .chat .right .message,
+.wrapper .chat .left .message {
+  background-color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 3px rgba(219, 219, 219, 0.711);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 25rem;
+  word-break: break-word;
+  text-align: start;
+}
+.wrapper .chat .left {
+  justify-content: start;
+}
+.wrapper .chat .right {
+  justify-content: end;
+}
+.wrapper .chat .right .message {
+  background-color: rgb(181, 236, 181);
+}
+.wrapper .sendMessage form {
+  border-top: solid 0.5px var(--mid-grey);
+  box-sizing: border-box;
+  padding: 1.5rem 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+.wrapper .sendMessage form input {
+  height: 4rem;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  padding: 0 2rem;
+  border: solid 0.5px var(--mid-grey);
+  font-size: 2rem;
+}
+.wrapper .sendMessage form input:focus {
+  outline: none;
+}
+.wrapper .sendMessage form button {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(37, 120, 203);
+  cursor: pointer;
+}
+.wrapper .sendMessage form button:hover {
+  background-color: rgb(2, 103, 203);
+}
+.wrapper .sendMessage form button svg {
+  width: 70%;
+  transform: translate(-10%, 10%);
+  fill: rgb(255, 255, 255);
+}/*# sourceMappingURL=Chat.module.css.map */

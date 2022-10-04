@@ -1,0 +1,19 @@
+:root {
+  font-size: 62.5%;
+  --white: rgb(247, 247, 247);
+  --chat-background: rgb(246, 243, 240);
+  --mid-grey: rgb(210, 210, 210);
+  --blue: rgb(37, 120, 203);
+  --dark-blue: rgb(11, 103, 195);
+  --focused-color: #dddddd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
